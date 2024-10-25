@@ -72,17 +72,17 @@ with cols[0]:
     st.markdown("### API Endpoint")
     api_endpoint = st.text_input(
         "API URL",
-        value="https://api.example.com/blog-generator",
+        value="https://04akvtn4gg.execute-api.ap-southeast-2.amazonaws.com/dev_environment/blog-generation",
         key="api_endpoint"
     )
     if st.button("Open API Documentation"):
         st.markdown(f"[API Documentation]({api_endpoint})")
 
 with cols[1]:
-    st.markdown("### GitHub Repository")
+    st.markdown("### Amazon Lambda Function")
     github_repo = st.text_input(
         "Repository URL",
-        value="https://github.com/yourusername/blog-generator",
+        value="https://github.com/anshul-beep/blog_generator_streamlit",
         key="github_repo"
     )
     if st.button("Open GitHub Repository"):
@@ -102,24 +102,24 @@ with cols[2]:
 
 
 
-# Requirements section
-st.sidebar.title("Requirements")
-st.sidebar.markdown("""
-### Dependencies
-```
-streamlit==1.24.0
-Pillow==9.5.0
-pandas==1.5.3
-```
+# # Requirements section
+# st.sidebar.title("Requirements")
+# st.sidebar.markdown("""
+# ### Dependencies
+# ```
+# streamlit==1.24.0
+# Pillow==9.5.0
+# pandas==1.5.3
+# ```
 
-### Installation
-```bash
-pip install streamlit Pillow pandas
-```
+# ### Installation
+# ```bash
+# pip install streamlit Pillow pandas
+# ```
 
-### Run the app
-```bash
-streamlit run app.py
-```
-""")
+# ### Run the app
+# ```bash
+# streamlit run app.py
+# ```
+# """)
 
